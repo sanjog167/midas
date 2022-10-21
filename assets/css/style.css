@@ -798,5 +798,26 @@ aside li a {
     visibility: hidden;
 }
 
+.vertical-menu{
+  display: none !important;
 }
 
+}
+
+
+@media(max-width:1200px){
+  .moreInfo_right {
+    width: 90%;
+}
+
+.rightbuttons{
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.mt-10{
+  margin-top: initial;
+}
+
+
+}
