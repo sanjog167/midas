@@ -419,7 +419,6 @@ thead{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -436,7 +435,15 @@ thead{
   width: 80%;
 }
 
+.grandTotal h4{
+  background-color: var(--bs-sidebar-bg);
+}
+
 .tm_accent_bg_10 {
+  background-color: rgba(0, 122, 255, 0.1);
+}
+
+.allTotal{
   background-color: rgba(0, 122, 255, 0.1);
 }
 
@@ -663,6 +670,10 @@ width: 70%;
 transition-delay: 0.5s;
 }
 
+#sidebar-menu ul li a:hover {
+  color: var(--bs-secondary);
+}
+
 aside li a {
   display: block;
   padding: 0.62rem 1.5rem;
@@ -672,6 +683,14 @@ aside li a {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   font-weight: 500;
+}
+
+.sidebar-enable #sidebar-menu li a{
+  text-align: left !important;
+}
+
+.sidebar-enable #sidebar-menu li a img{
+  margin-right: 12px;
 }
 
 
@@ -713,7 +732,7 @@ aside li a {
 
   .moreInfo_right {
     float: initial;
-    margin-top: 10px;
+    margin-top: 25px;
     width: 100%;
     padding: 20px;
 }
@@ -725,6 +744,18 @@ aside li a {
   .searchFields{
     flex-direction: column;
     align-items: start !important;
+  }
+
+  .tm_invoice_footer{
+    flex-direction: column;
+  }
+
+  .page-content {
+    padding-bottom: 29px;
+}
+
+  .tm_left_footer, .tm_right_footer td {
+    width: 100% !important;
   }
 
   .field{
@@ -807,7 +838,7 @@ aside li a {
 
 @media(max-width:1200px){
   .moreInfo_right {
-    width: 90%;
+    width: 100%;
 }
 
 .rightbuttons{
@@ -818,6 +849,13 @@ aside li a {
 .mt-10{
   margin-top: initial;
 }
+}
 
-
+@media(max-width:340px){
+  aside #nav {
+    max-width: 225px;
+}
+body.menu-open header {
+  left: 211px !important;
+}
 }

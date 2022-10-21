@@ -858,7 +858,7 @@ body[data-sidebar-size="sm"]
 body[data-sidebar-size="sm"] .vertical-menu #sidebar-menu > ul > li:hover > a {
   position: relative;
   width: calc(190px + 70px);
-  color: #5156be;
+  color: #fff;
   background-color: var(--bs-sidebar-bg);
   -webkit-transition: none;
   transition: none;

@@ -30,6 +30,13 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <link
+    href="assets/css/lunar.css"
+   
+    rel="stylesheet"
+    type="text/css"
+  />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -225,9 +232,9 @@
               <li>
                 <a
                   href="https://www.midastechnologies.com.np/site/about"
-                  target="_blank"
+                  target="_blank" class="text-center"
                 >
-                  <i data-feather="home"></i>
+                  <img src="assets/images/information-button.png" style="width: 15px;">
                   <span data-key="t-dashboard">About</span>
                 </a>
               </li>
@@ -235,9 +242,9 @@
               <li>
                 <a
                   href="https://www.midastechnologies.com.np/site/#featureSection"
-                  target="_blank"
+                  target="_blank" class="text-center"
                 >
-                  <i data-feather="home"></i>
+                <img src="assets/images/menu.png" style="width: 15px;">
                   <span data-key="t-dashboard">Features</span>
                 </a>
               </li>
@@ -245,9 +252,9 @@
               <li>
                 <a
                   href="https://www.midastechnologies.com.np/site/#availableSection"
-                  target="_blank"
+                  target="_blank" class="text-center"
                 >
-                  <i data-feather="home"></i>
+                     <img src="assets/images/platform.png" style="width: 15px;">
                   <span data-key="t-dashboard">Available Platforms</span>
                 </a>
               </li>
@@ -255,9 +262,9 @@
               <li>
                 <a
                   href="https://www.midastechnologies.com.np/site/#clientSection"
-                  target="_blank"
+                  target="_blank" class="text-center"
                 >
-                  <i data-feather="home"></i>
+                     <img src="assets/images/customer.png" style="width: 15px;">
                   <span data-key="t-dashboard">Clients</span>
                 </a>
               </li>
@@ -265,9 +272,9 @@
               <li>
                 <a
                   href="https://www.midastechnologies.com.np/site/#testimonialSection"
-                  target="_blank"
+                  target="_blank" class="text-center"
                 >
-                  <i data-feather="home"></i>
+                     <img src="assets/images/review.png" style="width: 15px;">
                   <span data-key="t-dashboard">Testimonials</span>
                 </a>
               </li>
@@ -655,7 +662,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header p-1">
-                    <a href="#" class="btn btn-filled addnew-btn float-end"
+                    <a href="#" class="btn btn-filled addnew-btn float-end" data-toggle="modal" data-target="#demoModal"
                       ><span>Add New</span> <i class="fa fa-plus text-white"></i
                     ></a>
                   </div>
@@ -712,14 +719,28 @@
             <!-- end row -->
 
             <div class="tm_invoice_footer tm_mb15 tm_m0_md">
-              <div class="tm_left_footer">
-                <p class="tm_mb2">
-                  <b class="tm_primary_color">Payment info:</b>
-                </p>
-                <p class="tm_m0">
-                  Jhon Doe <br />Credit Card - 236***********928 <br />Amount:
-                  $315
-                </p>
+              <div class="tm_left_footer w-50 text-center">
+               <h4>OP BILLING</h4>
+               <div class="grandTotal">
+                <p class="mb-2">Grand Total</p>
+                <h4 class="text-white mb-0">00.00</h4>
+               </div>
+               <div class="allTotal d-flex align-items-center justify-content-between p-1">
+                <p class="mb-0">Dep. Balance</p>
+                <p class="mb-0">00.00</p>
+               </div>
+               <div class="allTotal d-flex align-items-center justify-content-between p-1">
+                <p class="mb-0">Net Balance</p>
+                <p class="mb-0">00.00</p>
+               </div>
+               <div class="allTotal d-flex align-items-center justify-content-between p-1">
+                <p class="mb-0">Tender Amt</p>
+                <p class="mb-0">00.00</p>
+               </div>
+               <div class="allTotal d-flex align-items-center justify-content-between p-1">
+                <p class="mb-0">Return Amt</p>
+                <p class="mb-0">00.00</p>
+               </div>
               </div>
               <div class="tm_right_footer w-100">
                 <table class="tm_mb15 tm_m0_md float-end">
@@ -1358,6 +1379,70 @@
       </nav>
     </aside>
 
+        <!-- Modal -->
+        <div class="modal fade "   id="demoModal"  tabindex="-1" role="dialog"
+        aria-labelledby="demoModal" aria-hidden="true">
+       <div class="modal-dialog  modal-lg modal-dialog-centered " role="document">
+           <div class="modal-content">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-6 bg-img d-none d-sm-flex align-items-end" style="background-image: url('https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80')">
+                          <div class="pb-5 pt-5 text-white">
+                             <div> "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error esse et ex "</div>
+                              <h6>Adam Stuart, Super Paints</h6>
+                          </div>
+                      </div>
+                      <div class="col-md-6 py-5 px-sm-5 ">
+                          <h2>Sign Up</h2>
+                          <form>
+                              <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                      <label for="inputEmail4">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                      <label for="inputPassword4">Password</label>
+                                      <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputAddress">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputAddress2">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                      <label for="inputCity">City</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                      <label for="inputState">State</label>
+                                      <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>New York</option>
+                                      </select>
+                                  </div>
+
+                              </div>
+
+                              <button type="submit" class="btn btn-cta btn-cstm-success"  data-dismiss="modal" aria-label="Close">Sign Up</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+
+
+           </div>
+       </div>
+   </div>
+   <!-- Modal Ends -->
+
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1367,6 +1452,8 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <!-- pace js -->
     <script src="assets/libs/pace-js/pace.min.js"></script>
+
+    <script src="assets/js/lunar.js"></script>
 
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
